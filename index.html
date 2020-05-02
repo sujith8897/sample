@@ -3,177 +3,99 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body style="background-color: white;">
-<div id="st-container" class="st-container">
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+  <a class="navbar-brand" href="./index.html">
+    LOGO
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="material-icons">menu</i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><h5>Home</h5><span class="sr-only">(current)</span></a>
+      </li>
 
-  <nav class="st-menu st-effect-1" id="menu-1">
-    <h2 class="icon icon-lab">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
+      <div>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer;" id="menu"><h5>Learn</h5></a>
+        </li>
+
+        <div class="dropdown-menu-container d-none animate slideIn">
+          <div class="menu-header">
+            <div class="row">
+              <div class="col-6">
+                Menu
+              </div>
+              <div class="col-6 text-right">
+                <button id="close-menu" class="btn btn-sm btn-link">
+                  <i class="material-icons">close</i></button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-content">
+            <div class="row">
+              <div class="col-9">
+                <div class="menu-title text-poppins">
+                  Account
+                </div>
+                <div class="menu-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-content">
+            <div class="row">
+              <div class="col-9">
+                <div class="menu-title text-poppins">
+                  Billing
+                </div>
+                <div class="menu-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-content">
+            <div class="row">
+              <div class="col-9">
+                <div class="menu-title text-poppins">
+                  Boards
+                </div>
+                <div class="menu-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-content">
+            <div class="row">
+              <div class="col-9">
+                <div class="menu-title text-poppins">
+                  Settings
+                </div>
+                <div class="menu-subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </ul>
-  </nav>
 
-  <nav class="st-menu st-effect-2" id="menu-1">
-    <h2 class="icon icon-lab">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-  <nav class="st-menu st-effect-4" id="menu-4">
-    <h2 class="icon icon-lab">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-5" id="menu-5">
-    <h2 class="icon icon-stack">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-9" id="menu-9">
-    <h2 class="icon icon-lab">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-10" id="menu-10">
-    <h2 class="icon icon-stack">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-11" id="menu-11">
-    <h2 class="icon icon-lab">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-12" id="menu-12">
-    <h2 class="icon icon-stack">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-  <nav class="st-menu st-effect-13" id="menu-13">
-    <h2 class="icon icon-stack">Sidebar</h2>
-    <ul>
-      <li><a class="icon icon-data" href="#">Data Management</a></li>
-      <li><a class="icon icon-location" href="#">Location</a></li>
-      <li><a class="icon icon-study" href="#">Study</a></li>
-      <li><a class="icon icon-photo" href="#">Collections</a></li>
-      <li><a class="icon icon-wallet" href="#">Credits</a></li>
-    </ul>
-  </nav>
-
-
-  <div class="st-pusher">
-    <!-- 	
-					example menus 
-					these menus will be under the push wrapper
-				-->
-    <nav class="st-menu st-effect-3" id="menu-3">
-      <h2 class="icon icon-lab">Sidebar</h2>
-      <ul>
-        <li><a class="icon icon-data" href="#">Data Management</a></li>
-        <li><a class="icon icon-location" href="#">Location</a></li>
-        <li><a class="icon icon-study" href="#">Study</a></li>
-        <li><a class="icon icon-photo" href="#">Collections</a></li>
-        <li><a class="icon icon-wallet" href="#">Credits</a></li>
-      </ul>
-    </nav>
-
-    <nav class="st-menu st-effect-6" id="menu-6">
-      <h2 class="icon icon-stack">Sidebar</h2>
-      <ul>
-        <li><a class="icon icon-data" href="#">Data Management</a></li>
-        <li><a class="icon icon-location" href="#">Location</a></li>
-        <li><a class="icon icon-study" href="#">Study</a></li>
-        <li><a class="icon icon-photo" href="#">Collections</a></li>
-        <li><a class="icon icon-wallet" href="#">Credits</a></li>
-      </ul>
-    </nav>
-
-    <nav class="st-menu st-effect-7" id="menu-7">
-      <h2 class="icon icon-lab">Sidebar</h2>
-      <ul>
-        <li><a class="icon icon-data" href="#">Data Management</a></li>
-        <li><a class="icon icon-location" href="#">Location</a></li>
-        <li><a class="icon icon-study" href="#">Study</a></li>
-        <li><a class="icon icon-photo" href="#">Collections</a></li>
-        <li><a class="icon icon-wallet" href="#">Credits</a></li>
-      </ul>
-    </nav>
-
-    <nav class="st-menu st-effect-8" id="menu-8">
-      <h2 class="icon icon-stack">Sidebar</h2>
-      <ul>
-        <li><a class="icon icon-data" href="#">Data Management</a></li>
-        <li><a class="icon icon-location" href="#">Location</a></li>
-        <li><a class="icon icon-study" href="#">Study</a></li>
-        <li><a class="icon icon-photo" href="#">Collections</a></li>
-        <li><a class="icon icon-wallet" href="#">Credits</a></li>
-      </ul>
-    </nav>
-
-    <nav class="st-menu st-effect-14" id="menu-14">
-      <h2 class="icon icon-stack">Sidebar</h2>
-      <ul>
-        <li><a class="icon icon-data" href="#">Data Management</a></li>
-        <li><a class="icon icon-location" href="#">Location</a></li>
-        <li><a class="icon icon-study" href="#">Study</a></li>
-        <li><a class="icon icon-photo" href="#">Collections</a></li>
-        <li><a class="icon icon-wallet" href="#">Credits</a></li>
-      </ul>
-    </nav>
-  <div>
-  <button data-effect="st-effect-9" style="float: right;background-color:black;position: fixed;right: 0px;top: 10%px;">Explore</button>
-</div>
-  <div style="height: 1000px;">
-  	<p>sj</p>
   </div>
-
+</nav>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
